@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Tic Tac Toe</string>
+    <string name="txt_Welcome_to_TTT">Welcome To Tic-Tac-Toe</string>
+    <string name="CD_Grid">Grid</string>
+</resources>
