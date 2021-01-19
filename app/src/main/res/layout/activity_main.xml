@@ -4,17 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/Sky_blue"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/sp_25"
         android:fontFamily="@font/waiting_for_the_sunrise"
         android:text="@string/txt_Welcome_to_TTT"
-        android:textColor="@color/black"
+        android:textColor="@color/purple_colour"
         android:textSize="@dimen/sp_40"
         android:textStyle="bold"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -23,14 +23,145 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="@dimen/dp_0"
+        android:layout_height="@dimen/dp_0"
         android:contentDescription="@string/CD_Grid"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:srcCompat="@drawable/grid" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_420"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" >
+
+        <ImageView
+            android:id="@+id/box_first"
+            android:layout_width="@dimen/dp_78"
+            android:layout_height="@dimen/dp_73"
+            android:onClick="PlayerTap"
+            android:tag="0"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true" />
+
+        <ImageView
+            android:id="@+id/box_second"
+            android:onClick="PlayerTap"
+            android:tag="1"
+            android:layout_width="@dimen/dp_78"
+            android:layout_height="@dimen/dp_73"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:id="@+id/box_third"
+            android:onClick="PlayerTap"
+            android:tag="2"
+            android:layout_width="@dimen/dp_78"
+            android:layout_height="@dimen/dp_73"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true" />
+
+
+
+
+
+        <ImageView
+            android:id="@+id/box_fourth"
+            android:layout_width="@dimen/dp_78"
+            android:onClick="PlayerTap"
+            android:tag="3"
+            android:layout_marginTop="100dp"
+            android:layout_height="@dimen/dp_73"
+            android:layout_below="@+id/box_first"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true" />
+
+        <ImageView
+            android:id="@+id/box_fifth"
+            android:layout_width="@dimen/dp_78"
+            android:onClick="PlayerTap"
+            android:tag="4"
+            android:layout_marginTop="100dp"
+            android:layout_below="@+id/box_second"
+            android:layout_height="@dimen/dp_73"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:id="@+id/box_six"
+            android:onClick="PlayerTap"
+            android:tag="5"
+            android:layout_width="@dimen/dp_78"
+            android:layout_marginTop="@dimen/dp_100"
+            android:layout_below="@id/box_third"
+            android:layout_height="@dimen/dp_73"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true" />
+
+
+
+
+
+        <ImageView
+            android:id="@+id/box_seventh"
+            android:onClick="PlayerTap"
+            android:tag="6"
+            android:layout_width="@dimen/dp_78"
+            android:layout_marginTop="@dimen/dp_90"
+            android:layout_height="@dimen/dp_73"
+            android:layout_below="@+id/box_fourth"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true" />
+
+        <ImageView
+            android:id="@+id/box_eight"
+            android:onClick="PlayerTap"
+            android:tag="7"
+            android:layout_width="@dimen/dp_78"
+            android:layout_marginTop="@dimen/dp_90"
+            android:layout_below="@+id/box_fifth"
+            android:layout_height="@dimen/dp_73"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:id="@+id/box_nine"
+            android:onClick="PlayerTap"
+            android:tag="8"
+            android:layout_marginTop="@dimen/dp_90"
+            android:layout_width="@dimen/dp_78"
+            android:layout_below="@id/box_six"
+            android:layout_height="@dimen/dp_73"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true" />
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/Game_Status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Player1_TapToPlay"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:fontFamily="@font/waiting_for_the_sunrise"
+        android:textStyle="bold"
+        android:background="@color/purple_colour"
+        android:layout_marginStart="@dimen/dp_40"
+        android:layout_marginEnd="@dimen/dp_40"
+        android:textSize="@dimen/sp_30"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/dp_20"/>
+
 
 
 
