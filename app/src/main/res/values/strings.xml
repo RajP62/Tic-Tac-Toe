@@ -3,4 +3,13 @@
     <string name="txt_Welcome_to_TTT">Welcome To Tic-Tac-Toe</string>
     <string name="CD_Grid">Grid</string>
     <string name="Player1_TapToPlay">Player 1 : Tap to play</string>
+    <string name="Box_1_txt">box_1</string>
+    <string name="Box_2_txt">box_2</string>
+    <string name="Box_3_txt">box_3</string>
+    <string name="Box_4_txt">box_4</string>
+    <string name="Box_5_txt">box_5</string>
+    <string name="Box_6_txt">box_6</string>
+    <string name="Box_7_txt">box_7</string>
+    <string name="Box_8_txt">box_8</string>
+    <string name="Box_9_txt">box_9</string>
 </resources>

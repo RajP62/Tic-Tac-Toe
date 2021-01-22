@@ -46,99 +46,102 @@
             android:id="@+id/box_first"
             android:layout_width="@dimen/dp_78"
             android:layout_height="@dimen/dp_73"
-            android:onClick="PlayerTap"
-            android:tag="0"
             android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true" />
+            android:layout_alignParentLeft="true"
+            android:contentDescription="@string/Box_1_txt"
+            android:onClick="PlayerTap"
+            android:tag="0" />
 
         <ImageView
             android:id="@+id/box_second"
-            android:onClick="PlayerTap"
-            android:tag="1"
             android:layout_width="@dimen/dp_78"
             android:layout_height="@dimen/dp_73"
-            android:layout_centerHorizontal="true" />
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/Box_2_txt"
+            android:onClick="PlayerTap"
+            android:tag="1" />
 
         <ImageView
             android:id="@+id/box_third"
-            android:onClick="PlayerTap"
-            android:tag="2"
             android:layout_width="@dimen/dp_78"
             android:layout_height="@dimen/dp_73"
             android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true" />
-
-
-
+            android:layout_alignParentRight="true"
+            android:contentDescription="@string/Box_3_txt"
+            android:onClick="PlayerTap"
+            android:tag="2" />
 
 
         <ImageView
             android:id="@+id/box_fourth"
             android:layout_width="@dimen/dp_78"
-            android:onClick="PlayerTap"
-            android:tag="3"
-            android:layout_marginTop="100dp"
             android:layout_height="@dimen/dp_73"
             android:layout_below="@+id/box_first"
             android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true" />
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="100dp"
+            android:contentDescription="@string/Box_4_txt"
+            android:onClick="PlayerTap"
+            android:tag="3" />
 
         <ImageView
             android:id="@+id/box_fifth"
             android:layout_width="@dimen/dp_78"
-            android:onClick="PlayerTap"
-            android:tag="4"
-            android:layout_marginTop="100dp"
-            android:layout_below="@+id/box_second"
             android:layout_height="@dimen/dp_73"
-            android:layout_centerHorizontal="true" />
+            android:layout_below="@+id/box_second"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:contentDescription="@string/Box_5_txt"
+            android:onClick="PlayerTap"
+            android:tag="4" />
 
         <ImageView
             android:id="@+id/box_six"
-            android:onClick="PlayerTap"
-            android:tag="5"
             android:layout_width="@dimen/dp_78"
-            android:layout_marginTop="@dimen/dp_100"
-            android:layout_below="@id/box_third"
             android:layout_height="@dimen/dp_73"
+            android:layout_below="@id/box_third"
             android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true" />
-
-
-
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dp_100"
+            android:contentDescription="@string/Box_6_txt"
+            android:onClick="PlayerTap"
+            android:tag="5" />
 
 
         <ImageView
             android:id="@+id/box_seventh"
-            android:onClick="PlayerTap"
-            android:tag="6"
             android:layout_width="@dimen/dp_78"
-            android:layout_marginTop="@dimen/dp_90"
             android:layout_height="@dimen/dp_73"
             android:layout_below="@+id/box_fourth"
             android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true" />
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="@dimen/dp_90"
+            android:contentDescription="@string/Box_7_txt"
+            android:onClick="PlayerTap"
+            android:tag="6" />
 
         <ImageView
             android:id="@+id/box_eight"
-            android:onClick="PlayerTap"
-            android:tag="7"
             android:layout_width="@dimen/dp_78"
-            android:layout_marginTop="@dimen/dp_90"
-            android:layout_below="@+id/box_fifth"
             android:layout_height="@dimen/dp_73"
-            android:layout_centerHorizontal="true" />
+            android:layout_below="@+id/box_fifth"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_90"
+            android:contentDescription="@string/Box_8_txt"
+            android:onClick="PlayerTap"
+            android:tag="7" />
 
         <ImageView
             android:id="@+id/box_nine"
-            android:onClick="PlayerTap"
-            android:tag="8"
-            android:layout_marginTop="@dimen/dp_90"
             android:layout_width="@dimen/dp_78"
-            android:layout_below="@id/box_six"
             android:layout_height="@dimen/dp_73"
+            android:layout_below="@id/box_six"
             android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true" />
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dp_90"
+            android:contentDescription="@string/Box_9_txt"
+            android:onClick="PlayerTap"
+            android:tag="8" />
 
 
     </RelativeLayout>
