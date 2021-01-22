@@ -8,9 +8,7 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:gravity="center"
-        android:layout_height="wrap_content"
+        style="@style/match_wrap_gravity"
         android:layout_marginTop="@dimen/sp_25"
         android:fontFamily="@font/waiting_for_the_sunrise"
         android:text="@string/txt_Welcome_to_TTT"
@@ -40,107 +38,89 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" >
+        app:layout_constraintTop_toBottomOf="@+id/textView">
 
         <ImageView
             android:id="@+id/box_first"
-            android:layout_width="@dimen/dp_78"
-            android:layout_height="@dimen/dp_73"
+            style="@style/Boxes_similarities"
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
             android:contentDescription="@string/Box_1_txt"
-            android:onClick="PlayerTap"
             android:tag="0" />
 
         <ImageView
             android:id="@+id/box_second"
-            android:layout_width="@dimen/dp_78"
-            android:layout_height="@dimen/dp_73"
+            style="@style/Boxes_similarities"
             android:layout_centerHorizontal="true"
             android:contentDescription="@string/Box_2_txt"
-            android:onClick="PlayerTap"
             android:tag="1" />
 
         <ImageView
             android:id="@+id/box_third"
-            android:layout_width="@dimen/dp_78"
-            android:layout_height="@dimen/dp_73"
+            style="@style/Boxes_similarities"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:contentDescription="@string/Box_3_txt"
-            android:onClick="PlayerTap"
             android:tag="2" />
 
 
         <ImageView
             android:id="@+id/box_fourth"
-            android:layout_width="@dimen/dp_78"
-            android:layout_height="@dimen/dp_73"
+            style="@style/Boxes_similarities"
             android:layout_below="@+id/box_first"
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
             android:layout_marginTop="100dp"
             android:contentDescription="@string/Box_4_txt"
-            android:onClick="PlayerTap"
             android:tag="3" />
 
         <ImageView
             android:id="@+id/box_fifth"
-            android:layout_width="@dimen/dp_78"
-            android:layout_height="@dimen/dp_73"
+            style="@style/Boxes_similarities"
             android:layout_below="@+id/box_second"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="100dp"
             android:contentDescription="@string/Box_5_txt"
-            android:onClick="PlayerTap"
             android:tag="4" />
 
         <ImageView
             android:id="@+id/box_six"
-            android:layout_width="@dimen/dp_78"
-            android:layout_height="@dimen/dp_73"
+            style="@style/Boxes_similarities"
             android:layout_below="@id/box_third"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_marginTop="@dimen/dp_100"
             android:contentDescription="@string/Box_6_txt"
-            android:onClick="PlayerTap"
             android:tag="5" />
 
 
         <ImageView
             android:id="@+id/box_seventh"
-            android:layout_width="@dimen/dp_78"
-            android:layout_height="@dimen/dp_73"
+            style="@style/Boxes_similarities"
             android:layout_below="@+id/box_fourth"
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
             android:layout_marginTop="@dimen/dp_90"
             android:contentDescription="@string/Box_7_txt"
-            android:onClick="PlayerTap"
             android:tag="6" />
 
         <ImageView
             android:id="@+id/box_eight"
-            android:layout_width="@dimen/dp_78"
-            android:layout_height="@dimen/dp_73"
+            style="@style/Boxes_similarities"
             android:layout_below="@+id/box_fifth"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="@dimen/dp_90"
             android:contentDescription="@string/Box_8_txt"
-            android:onClick="PlayerTap"
             android:tag="7" />
 
         <ImageView
             android:id="@+id/box_nine"
-            android:layout_width="@dimen/dp_78"
-            android:layout_height="@dimen/dp_73"
+            style="@style/Boxes_similarities"
             android:layout_below="@id/box_six"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_marginTop="@dimen/dp_90"
             android:contentDescription="@string/Box_9_txt"
-            android:onClick="PlayerTap"
             android:tag="8" />
 
 
@@ -149,23 +129,19 @@
 
     <TextView
         android:id="@+id/Game_Status"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/Player1_TapToPlay"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:fontFamily="@font/waiting_for_the_sunrise"
-        android:textStyle="bold"
-        android:background="@color/purple_colour"
+        style="@style/match_wrap_gravity"
         android:layout_marginStart="@dimen/dp_40"
         android:layout_marginEnd="@dimen/dp_40"
-        android:textSize="@dimen/sp_30"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:background="@color/purple_colour"
+        android:fontFamily="@font/waiting_for_the_sunrise"
+        android:text="@string/Player1_TapToPlay"
         android:textColor="@color/white"
-        android:gravity="center"
-        android:layout_marginBottom="@dimen/dp_20"/>
-
-
+        android:textSize="@dimen/sp_30"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

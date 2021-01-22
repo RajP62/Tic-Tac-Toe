@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="match_wrap_gravity">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Boxes_similarities">
+        <item name="android:layout_width">@dimen/dp_78</item>
+        <item name="android:layout_height">@dimen/dp_73</item>
+        <item name="android:onClick">PlayerTap</item>
+    </style>
+
+
+</resources>
